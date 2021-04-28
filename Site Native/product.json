@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "name": "DELL Inspiron",
+        "description": "DELL Inspiron Gaming 15 G5 Black (5500)+W10H, 15.6'' 300Hz WVA FHD300 nits (IntelCore i7-10750H, 2.6-5.0GHz, 16GB (2x8) DDR4 RAM, 1TB M.2 PCIe SSD, GeForce GTX  1660Ti 6GB GDDR6CR, WiFi6-AC/BT5, 4cell, HD Webcam, Backlit KB,RUS,Win10H,2.34kg).",
+        "tag" : "asus2",
+        "price" : 1970
+      },
+      {
+        "id": 2,
+        "name": "Apple MacBook Air",
+        "description": "Apple Macbook Air 2020 M1 Arm (5500)+W10H, 15.6'' 300Hz WVA FHD300 nits (IntelCore i7-10750H, 2.6-5.0GHz, 16GB (2x8) DDR4 RAM, 1TB M.2 PCIe SSD, GeForce GTX  1660Ti 6GB GDDR6CR, WiFi6-AC/BT5, 4cell, HD Webcam, Backlit KB,RUS,Win10H,2.34kg).",
+        "tag" : "asus3",
+        "price" : 1920
+      },
+      {
+        "id": 3,
+        "name": "ASUS G712LW",
+        "description": "Asus Rog Strix G17LW 17.3' (5500)+W10H, 15.6'' 300Hz WVA FHD300 nits (IntelCore i7-10750H, 2.6-5.0GHz, 16GB (2x8) DDR4 RAM, 1TB M.2 PCIe SSD, GeForce GTX  1660Ti 6GB GDDR6CR, WiFi6-AC/BT5, 4cell, HD Webcam, Backlit KB,RUS,Win10H,2.34kg).",
+        "tag" : "b9450asus",
+        "price" : 1850
+      },
+      {
+        "id": 4,
+        "name": "HP EliteBook",
+        "description": "HP EliteBook Dragonfly Convertible 13.3'' FHD Touch BV AG UWVA 1000nit (Intel® Core™ i5-8365U, 16GB LPDDR3, 512GB SSD PCIe NVMe+32GB Intel® Optane , Intel® UHD 620, Intel Wi-Fi 6 AX200+BT5, FPR, TB, 4 Cell 56WH, Galaxy Blue Magnesium, Win10Pro, 0.99kg).",
+        "tag" : "macair",
+        "price" : 1900
+      },
+      {
+        "id": 5,
+        "name": "DELL Inspiron",
+        "description": "DELL Inspiron Gaming 15 G5 Black (5500)+W10H, 15.6'' 300Hz WVA FHD300 nits (IntelCore i7-10750H, 2.6-5.0GHz, 16GB (2x8) DDR4 RAM, 1TB M.2 PCIe SSD, GeForce GTX  1660Ti 6GB GDDR6CR, WiFi6-AC/BT5, 4cell, HD Webcam, Backlit KB,RUS,Win10H,2.34kg).",
+        "tag" : "asus2",
+        "price" : 1970
+      },
+      {
+        "id": 6,
+        "name": "Apple MacBook Air",
+        "description": "Apple Macbook Air 2020 M1 Arm (5500)+W10H, 15.6'' 300Hz WVA FHD300 nits (IntelCore i7-10750H, 2.6-5.0GHz, 16GB (2x8) DDR4 RAM, 1TB M.2 PCIe SSD, GeForce GTX  1660Ti 6GB GDDR6CR, WiFi6-AC/BT5, 4cell, HD Webcam, Backlit KB,RUS,Win10H,2.34kg).",
+        "tag" : "asus3",
+        "price" : 1920
+      },
+      {
+        "id": 7,
+        "name": "ASUS G712LW",
+        "description": "Asus Rog Strix G17LW 17.3' (5500)+W10H, 15.6'' 300Hz WVA FHD300 nits (IntelCore i7-10750H, 2.6-5.0GHz, 16GB (2x8) DDR4 RAM, 1TB M.2 PCIe SSD, GeForce GTX  1660Ti 6GB GDDR6CR, WiFi6-AC/BT5, 4cell, HD Webcam, Backlit KB,RUS,Win10H,2.34kg).",
+        "tag" : "b9450asus",
+        "price" : 1850
+      },
+      {
+        "id": 8,
+        "name": "HP EliteBook",
+        "description": "HP EliteBook Dragonfly Convertible 13.3'' FHD Touch BV AG UWVA 1000nit (Intel® Core™ i5-8365U, 16GB LPDDR3, 512GB SSD PCIe NVMe+32GB Intel® Optane , Intel® UHD 620, Intel Wi-Fi 6 AX200+BT5, FPR, TB, 4 Cell 56WH, Galaxy Blue Magnesium, Win10Pro, 0.99kg).",
+        "tag" : "macair",
+        "price" : 1900
+      }
+]

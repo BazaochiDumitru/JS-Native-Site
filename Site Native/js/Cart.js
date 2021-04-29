@@ -8,7 +8,7 @@ class Cart {
       cartContainer.innerHTML += `
             <li data-id="${product.id}">
                   <div class="remove__btn">
-                     <em class="far fa-minus-square remove__item"></em>
+                     <em class="fas fa-times-circle remove__item"></em>
                   </div>
         
                   <div class="product__img">
@@ -20,7 +20,7 @@ class Cart {
                   </div>
         
                   <div class="product__quantity">
-                     <em class="far fa-minus-square decrease__item"></em>
+                     <em class="fas fa-minus decrease__item"></em>
                      <span>${product.quantity}</span>
                      <em class="fas fa-plus increase__item"></em>
                   </div>

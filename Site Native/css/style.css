@@ -125,11 +125,3 @@ ul.social li {
 .social li a {
   background-color: transparent;
 }
-
-.scrollToTopBtn {
-  position: fixed;
-  bottom: 50px;
-  right: 20px;
-  z-index: 100;
-  display: none;
-}

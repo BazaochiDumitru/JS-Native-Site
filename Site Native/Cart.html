@@ -67,27 +67,27 @@
     <div class="total__container"></div>
 
     <div class="code__container">
-      <form class="promo" action="">
+      <form class="promo" action="/action_page.php">
         <h3>PROMO CODE</h3>
         <label for="code">Promo Code:</label>
-        <input type="code" id="code" placeholder="Enter code" name="code" />
+        <input type="text" id="code" placeholder="Enter code" name="code" />
         <button type="submit">Apply</button>
       </form>
     </div>
 
     <div class="form__container">
-      <form class="form-inline" action="">
+      <form class="form-inline" action="/action_page.php">
         <h3>ORDER FORM</h3>
         <label for="name">Name:</label>
-        <input type="name" id="name" placeholder="Enter name" name="name" />
+        <input type="text" id="name" placeholder="Enter name" name="name" />
         <label for="email">Email:</label>
         <input type="email" id="email" placeholder="Enter email" name="email" />
         <label for="phone">Phone:</label>
-        <input type="phone" id="phone" placeholder="Enter phone" name="phone" />
+        <input type="tel" id="phone" placeholder="Enter phone" name="phone" />
         <label for="address">Address:</label>
         <input
-          type="address"
-          id="email"
+          type="text"
+          id="address"
           placeholder="Enter address"
           name="address"
         />
@@ -99,15 +99,15 @@
         </select>
 
         <label for="delivery">Delivery Method:</label>
-        <select id="city" name="city" style="height: 40px">
+        <select id="delivery" name="city" style="height: 40px">
           <option value="chisinau">Posta Moldovei</option>
           <option value="balti">Nova Poshta</option>
           <option value="other">DHL</option>
         </select>
-        <label for="comments">Comments:</label>
+        <label for="comment">Comments:</label>
         <!-- <input type="comments" id="email" placeholder="Enter comments" name="comments"> -->
         <textarea
-          id="subject"
+          id="comment"
           name="subject"
           placeholder="Write something.."
           style="height: 100px"

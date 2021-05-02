@@ -114,7 +114,7 @@
   margin-top: 70px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 50PX;
+  margin-bottom: 50px;
   display: flex;
   flex-flow: column wrap;
   /* align-items: center; */
@@ -230,8 +230,6 @@
   }
 }
 
-
-
 @media (max-width: 1200px) {
   .form-inline input {
     margin: 10px 0;
@@ -253,5 +251,3 @@
     align-items: stretch;
   }
 }
-
-

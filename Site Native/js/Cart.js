@@ -35,7 +35,7 @@ class Cart {
 
     totalContainer.innerHTML += `
         <div class="basketTotalContainer">
-            <h4 class="basketTotalTitle">Basket Total</h4>
+            <h4 class="basketTotalTitle">Total Price</h4>
             <h4 class="basketTotal">${this.sumOfCart()} $</h4>
         </div>
         `;

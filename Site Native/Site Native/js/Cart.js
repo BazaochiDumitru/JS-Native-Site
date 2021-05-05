@@ -1,5 +1,6 @@
-class Cart {
+class Cart  {
   cart = JSON.parse(localStorage.getItem("cart")) || [];
+  _shippingPrice = 0;
 
   renderCart() {
     const cartContainer = document.querySelector(".products");
@@ -20,7 +21,11 @@ class Cart {
   sumOfCart() {
     return this.cart.reduce((accumulator, value) => {
       return accumulator + value.quantity * value.price;
-    }, 0);
+    }, 0) + this._shippingPrice;
+  }
+
+  showCartSum(newPrice) {
+    document.querySelector('.basketTotal').innerHTML = `${newPrice} $`;
   }
 
   removeHandler() {
@@ -51,8 +56,6 @@ class Cart {
   }
 
   increaseQuantity(evt) {
-    const totalPrice = document.querySelector(".basketTotal");
-
     const id = Number(
       evt.target.parentElement.parentElement.getAttribute("data-id")
     );
@@ -62,7 +65,7 @@ class Cart {
         evt.target.parentElement.querySelector(
           "span"
         ).innerHTML = `${item.quantity}`;
-        totalPrice.innerHTML = `${this.sumOfCart()}$`;
+        this.showCartSum(this.sumOfCart());
       }
     });
     this.renderCartCount(this.getCartQuantity());
@@ -70,7 +73,6 @@ class Cart {
   }
 
   decreaseQuantity(evt) {
-    const totalPrice = document.querySelector(".basketTotal");
     const id = Number(
       evt.target.parentElement.parentElement.getAttribute("data-id")
     );
@@ -81,7 +83,7 @@ class Cart {
         evt.target.parentElement.querySelector(
           "span"
         ).innerHTML = `${item.quantity}`;
-        totalPrice.innerHTML = `${this.sumOfCart()}$`;
+        this.showCartSum(this.sumOfCart());
       }
     });
     this.renderCartCount(this.getCartQuantity());
@@ -100,7 +102,7 @@ class Cart {
 
     this.renderCartCount(this.getCartQuantity());
     localStorage.setItem("cart", JSON.stringify(this.cart));
-    document.querySelector(".basketTotal").innerHTML = `${this.sumOfCart()} $`;
+    this.showCartSum(this.sumOfCart());
   }
 
   renderCartCount(value) {
@@ -112,15 +114,61 @@ class Cart {
       return accumulator + value.quantity;
     }, 0);
   }
+
+  validate() {
+    const validateBtn = document.getElementById("validate");
+
+     validateBtn.addEventListener('click', () => {
+      this.confirm();
+    })
+  }
+
+  deliveryHandler() {
+    const delivery = document.getElementById('delivery');
+
+    delivery.onchange = (evt) => {
+      this._shippingPrice = parseInt(evt.target.value);
+      this.showCartSum(this.sumOfCart());
+    }
+  }
+
+  confirm() {
+    const address = document.getElementById("address");
+    const phone = document.getElementById("phone");
+    const phoneRegexp = /^[\+373|373]*[0]*[0-9]{7,8}$/;
+    const addressRegexp = /^[a-zA-Z0-9\s,'-]{4,}$/;
+    const name = document.getElementById("name");
+
+    if (!(new RegExp(addressRegexp).test(address.value) && address.value.length < 20)) {
+      console.log("Wrong address");
+      alert('Wrong address');
+      return;
+    }
+
+    if (!(new RegExp(/^[a-zA-Z ]{2,30}$/).test(name.value))) {
+      console.log("wrong name");
+      alert('Wrong name');
+      return;
+    }
+
+    if (!(new RegExp(phoneRegexp).test(phone.value))) {
+      console.log("Wrong phone");
+      alert('Wrong phone');
+      return;
+    }
+
+    console.log("Data sent successfully!");
+    alert('Data sent successfully!');
+  }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
   const cart = new Cart();
-  const validation = new Validation();
 
   cart.renderCart();
   cart.renderCartCount(cart.getCartQuantity());
   cart.removeHandler();
   cart.quantityHandler();
-  validation.validate();
+  cart.validate();
+  cart.deliveryHandler();
 });

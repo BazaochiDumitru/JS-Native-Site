@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/nav.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/cart.css"/>
+    <link rel="shortcut icon" type="img/jpg" href="img/command-symbol.png"/>
+    <title>JS Native Site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+</head>
+
+<body>
+<header class="l-header">
+    <!-- Navigaation -->
+    <nav class="nav bd-grid">
+        <div class="nav__toggle" id="nav-toggle">
+            <img src="icons/icon-menu.svg" alt=""/>
+        </div>
+        <div>
+            <a href="index.html" class="nav__logo"><img src="img/command-symbol.png" alt=""/></a>
+        </div>
+        <!-- ===== NAV LIST ===== -->
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link">HOME</a>
+                </li>
+                <li class="nav__item">
+                    <a href="product.html" class="nav__link">PRODUCTS</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">SALE</a>
+                </li>
+                <li class="nav__item">
+                    <a href="credit.html" class="nav__link">CREDIT</a>
+                </li>
+                <li class="nav__item">
+                    <a href="contacts.html" class="nav__link">CONTACTS</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header__cart cart" tabindex="0">
+            <a href="Cart.html"
+            ><img src="icons/shopping-bag.svg" alt=""/>
+                <span id="cartValue">0</span>
+            </a>
+        </div>
+    </nav>
+</header>
+
+<div class="products-container">
+    <div class="product-header">
+        <h5 class="product-title">PRODUCT</h5>
+        <h5 class="quantity">QUANTITY</h5>
+        <h5 class="price">PRICE</h5>
+    </div>
+    <ul class="products"></ul>
+</div>
+<div class="total__container"></div>
+
+<div class="form__container">
+    <form class="form-inline">
+        <h3>ORDER FORM</h3>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter name" name="name"/>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter email" name="email"/>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" placeholder="Enter phone" name="phone"/>
+        <label for="address">Address:</label>
+        <input
+                type="text"
+                id="address"
+                placeholder="Enter address"
+                name="address"
+        />
+        <label for="city">City:</label>
+        <select id="city" name="city" style="height: 40px">
+            <option value="chisinau">Chisinau</option>
+            <option value="balti">Balti</option>
+            <option value="other">Other...</option>
+        </select>
+
+        <label for="delivery">Delivery Method:</label>
+        <select id="delivery" name="city" style="height: 40px">
+            <option value="0">Posta Moldovei - 4-7 days - FREE</option>
+            <option value="10">Nova Poshta - 2-4 days - 10$</option>
+            <option value="25">DHL - 1-2 days - 25$</option>
+        </select>
+
+        <label for="payment">Payment Method:</label>
+        <select id="payment" name="payment" style="height: 40px">
+            <option value="cash">Cash</option>
+            <option value="card">Card</option>
+            <option value="credit">Credit</option>
+        </select>
+        <label for="comment">Comments:</label>
+        <textarea
+                id="comment"
+                name="subject"
+                placeholder="Write something.."
+                style="height: 100px"
+        ></textarea>
+        <a id="validate">Order</a>
+    </form>
+</div>
+<script src="js/Templates.js"></script>
+<script src="js/Cart.js"></script>
+<script src="js/nav.js"></script>
+</body>
+</html>

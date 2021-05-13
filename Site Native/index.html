@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/nav.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/home.css"/>
+    <link rel="stylesheet" href="css/footer.css"/>
+    <link rel="shortcut icon" type="img/jpg" href="img/command-symbol.png"/>
+    <title>JS Native Site</title>
+</head>
+<body>
+<header class="l-header">
+    <!-- Navigaation -->
+    <nav class="nav bd-grid">
+        <div class="nav__toggle" id="nav-toggle">
+            <img src="icons/icon-menu.svg" alt=""/>
+        </div>
+        <div>
+            <a href="index.html" class="nav__logo"><img src="img/command-symbol.png" alt=""/></a>
+        </div>
+        <!-- ===== NAV LIST ===== -->
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link">HOME</a>
+                </li>
+                <li class="nav__item">
+                    <a href="product.html" class="nav__link">PRODUCTS</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">SALE</a>
+                </li>
+                <li class="nav__item">
+                    <a href="credit.html" class="nav__link">CREDIT</a>
+                </li>
+                <li class="nav__item">
+                    <a href="contacts.html" class="nav__link">CONTACTS</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header__cart cart" tabindex="0">
+            <a href="Cart.html" class="cart"><img src="icons/shopping-bag.svg" alt=""/>
+                <span id="cartValue">0</span>
+            </a>
+        </div>
+    </nav>
+</header>
+
+<main class="l-main bd-grid">
+    <section class="home">
+        <div class="home__data">
+            <h1 class="home__title">MacBook Pro & Air M1</h1>
+            <p class="home__description">
+                The new Macbook Pro & Air with M1 processors built on ARM technology
+                offers new possibilities for development,<br/>
+                navigation, and long-lasting battery life
+            </p>
+        </div>
+
+        <div class="home__img">
+            <!-- IMG -->
+            <img src="img/macbook.png" alt="" class="macbook1"/>
+            <img src="img/mbp-silver.png" alt="" class="macbook2"/>
+        </div>
+
+        <div class="home__scroll">
+          <span class="home__scroll-text">Want? Scroll down for more information</span>
+            <a href="#l-section"><img src="img/bx-mouse.svg" alt="" class="home__scroll-icon"/></a>
+        </div>
+    </section>
+
+    <!-- DETAILS macbooks -->
+    <section class="l-section" id="l-section">
+        <div class="details">
+            <div class="details__content">
+                <div class="details__box">
+                    <span class="details__initial">New</span>
+                    <h3 class="details__title">M1<span></span></h3>
+                    <p class="details__description">
+                        technology<br/>
+                        arm processor
+                    </p>
+                </div>
+                <div class="details__box">
+                    <span class="details__initial">Until</span>
+                    <h3 class="details__title">24<span> h</span></h3>
+                    <p class="details__description">
+                        battery with<br/>
+                        a single charge
+                    </p>
+                </div>
+                <div class="details__box">
+                    <span class="details__initial">Alone</span>
+                    <h3 class="details__title">15<span> min</span></h3>
+                    <p class="details__description">
+                        load equals<br/>
+                        up to 3 hours from<br/>
+                        audio
+                    </p>
+                </div>
+            </div>
+
+            <div class="details__img2">
+                <img src="img/mackbook-4-removebg-preview.png" alt="" class="macbooks"/>
+            </div>
+        </div>
+    </section>
+    <div class="pricee">
+        <span class="pricee__title">$ 1199.00</span>
+        <button class="pricee__button" onclick="goShopping()">
+            Go to Shopping
+        </button>
+    </div>
+</main>
+
+<footer id="footer" class="section footer">
+    <div class="container__footer">
+        <div class="footer__top">
+            <div class="footer-top__box">
+                <h3>EXTRAS</h3>
+                <a href="#">Brands</a>
+                <a href="#">Gift Certificates</a>
+                <a href="#">Affiliate</a>
+                <a href="#">Specials</a>
+                <a href="#">Site Map</a>
+            </div>
+            <div class="footer-top__box">
+                <h3>INFORMATION</h3>
+                <a href="#">About Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Site Map</a>
+            </div>
+            <div class="footer-top__box">
+                <h3>MY ACCOUNT</h3>
+                <a href="#">My Account</a>
+                <a href="#">Order History</a>
+                <a href="#">Wish List</a>
+                <a href="#">Newsletter</a>
+                <a href="#">Returns</a>
+            </div>
+            <div class="footer-top__box">
+                <h3>CONTACT US</h3>
+                <div>
+              <span>
+                <img src="img/placeholder.png" alt=""/>
+              </span>
+                    42 Dream House, Balti, Moldova
+                </div>
+                <div>
+              <span>
+                <img src="img/gmail.png" alt=""/>
+              </span>
+                    company@gmail.com
+                </div>
+                <div>
+              <span>
+                <img src="img/telephone.png" alt=""/>
+              </span>
+                    +373 681 23 456
+                </div>
+                <div>
+              <span>
+                <img src="img/paper-plane.png" alt=""/>
+              </span>
+                    Balti, Moldova
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="footer-bottom__box"></div>
+        <div class="footer-bottom__box"></div>
+    </div>
+</footer>
+<script src="js/Templates.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/index.js"></script>
+<!-- <script src="js/main.js"></script> -->
+</body>
+</html>
